@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ipda3 1</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+    
+  <style>
+     .row{
+        height: 100%!important;
+        }
+        html{
+            direction: rtl;
+        }
+        body{
+            position: relative; 
+            margin:0;
+            padding: 84px 0 0 0;
+            overflow-x: hidden;
+            font-family: 'Cairo', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: #0000;
+        }
+        .navbar-brand{
+            width:150px
+        }
+        .navbar-toggler{
+            border:0;
+            color: transparent!important;
+        }
+        .navbar-toggler i{
+            color:#6a9ed2;
+            font-size:28px;
+        }
+        .nav-link{
+            color:#3aade6!important;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .activeNavBarItem{
+            color:#243142!important
+        }
+        .nav-item{
+            border-bottom: 1px solid rgb(35, 173, 201,.2)
+        }
+        /************** ourWorks *************/
+        .sectionHeaderAppPage span{
+            position: relative;
+            font-size:36px;
+            margin-right: 15px;
+        }
+        .sectionHeaderAppPage span::after{
+            content: '';
+            position: absolute;
+            top: calc(50% - 40%);
+            right: -14px;
+            height: 80%;
+            width: 4px;
+            background-color: #3aade6;
+        }
+        .ourWorksContent{
+            background-color:#ececec;
+            justify-content: center;
+        }
+        .ourWorksContent .row{
+            justify-content:center
+        }
+        .ourWorksContent >div{
+            justify-content: center;
+        }
+        .ourWorksContentDiv{
+            background-color: #fff;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 0 15px 3px rgb(0,0,0,.3);
+            transition:all .5s ease-in-out;
+        }
+        .ourWorksContentDiv:hover{
+            box-shadow:0 0 0 0 transparent;
+            transform:translateY(-10px)
+        }
+        .ourWorksContentDiv h3{
+            color:#3aade6;
+        }
+        .anchorCotainer{
+            height: 70px;
+        }
+        .ourWorksAnchors{
+            color: #000 !important;
+            font-size: 24px;
+        }
+        .seeAllOurWorks button{
+            padding: 8px 15px;
+            background-color:#233142;
+            box-shadow:0 0 15px 3px rgb(0,0,0,.3);
+            color:#ffffff;
+            width: 250px;
+            border-radius: 50px;
+            font-size: 21px;
+        }     
+        .detailsContainer{
+            background: url(./assets/imgs/details-bg.png)  center center no-repeat;
+            background-size: cover; 
+        }
+        /************* footer *****************/
+        footer{
+            height:600px;
+            background: url(./assets/imgs/footer.jpg)  center center no-repeat;
+            background-size: cover; 
+        }
+        footer .imageContainer{
+            width: 290px; 
+        }
+        .footerSpan{
+            color:#ffffff;
+            font-size: 18px;
+        }
+        .listAnchors{
+            color: #ffffff!important;
+        }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-fluid" src="./assets/imgs/logo2.png" alt="Logo Image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                        الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ourWorks.html" class="nav-link activeNavBarItem">
+                        أعمالنا
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="articles.html" class="nav-link">
+                        مقالات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="appPage">
+        <div class="container pt-2">
+            <div class="sectionHeaderAppPage mb-3">
+                <span>تطبيق وان</span>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 m-auto col-md-6 col-12 mb-4">
+                        <div class="appImgContainer d-flex justify-content-center ">
+                            <img src="./assets/imgs/project-preview-header.png" alt='one app' class="img-fluid">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projectDetails">
+        <div class="container ">
+            <div class="sectionHeaderAppPage mb-3">
+                <span>تفاصيل المشروع</span>
+            </div>
+        </div>
+        <div class="detailsContainer">
+            <div class="container p-5 text-center text-light">
+                <article>
+                    لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset) البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="d-flex align-items-center h-100 imageContainer">
+                        <img src="./assets/imgs/footer-vec.jpg" class="img-fluid" alt="footerImage1">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="footerleftDivContainer d-flex flex-column justify-content-center h-100">
+                        <div class="d-flex align-items-lg-center  imageContainer">
+                            <img src="./assets/imgs/footer-logo3.png" class="img-fluid" alt="logo">
+                        </div>
+                        <span class="footerSpan my-4">
+                            المنصورة- حى الجامعة- تقسيم الزعبلاوى
+                        </span>
+                        <ul class="d-flex mt-3">
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-whatsapp fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-github fa-lg"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

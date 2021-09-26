@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ipda3 1</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+    
+  <style>
+     .row{
+        height: 100%!important;
+        }
+        html{
+            direction: rtl;
+        }
+        body{
+            position: relative; 
+            margin:0;
+            padding: 84px 0 0 0;
+            overflow-x: hidden;
+            font-family: 'Cairo', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: #0000;
+        }
+        .navbar-brand{
+            width:150px
+        }
+        .navbar-toggler{
+            border:0;
+            color: transparent!important;
+        }
+        .navbar-toggler i{
+            color:#6a9ed2;
+            font-size:28px;
+        }
+        .nav-link{
+            color:#3aade6!important;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .activeNavBarItem{
+            color:#243142!important
+        }
+        .nav-item{
+            border-bottom: 1px solid rgb(35, 173, 201,.2)
+        }
+        /********************* articles *************/
+        .articlecontent{
+            background: url(./assets/imgs/articles.jpg) no-repeat;
+            background-size: contain; 
+        }
+        .contentContainer{
+            background-color: #ffffff;
+        }
+        .sectionHeaderarticle span{
+            position: relative;
+            font-size:36px;
+            margin-right: 15px;
+        }
+        .sectionHeaderarticle span::after{
+            content: '';
+            position: absolute;
+            top: calc(50% - 40%);
+            right: -14px;
+            height: 80%;
+            width: 4px;
+            background-color: #3aade6;
+        
+        }
+        .articleContainer{
+            box-shadow:0 0 15px 3px rgb(0,0,0,.3);
+            border-radius: 15px;
+            overflow:hidden;
+        }
+        .articleContainer .imageContainer{
+            width:100%;
+        }
+        .readNowButton{
+            padding: 5px 20px;
+            background-color:#233142;
+            box-shadow:0 0 15px 3px rgb(0,0,0,.3);
+            color:#ffffff;
+            border-radius: 50px;
+            font-size: 14px;
+        }
+        .readNowButton:hover{
+            color:#ffffff!important
+        }
+
+       
+        /************* footer *****************/
+        footer{
+            height:600px;
+            background: url(./assets/imgs/footer.jpg)  center center no-repeat;
+            background-size: cover; 
+        }
+        footer .imageContainer{
+            width: 290px; 
+        }
+        .footerSpan{
+            color:#ffffff;
+            font-size: 18px;
+        }
+        .listAnchors{
+            color: #ffffff!important;
+        }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-light fixed-top">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-fluid" src="./assets/imgs/logo2.png" alt="Logo Image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                        الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ourWorks.html" class="nav-link">
+                        أعمالنا
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="articles.html" class="nav-link activeNavBarItem">
+                        مقالات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    <section id="aricles" class="">
+        <div class="container">
+            <div class="sectionHeaderarticle">
+                <span>المقالات</span>
+            </div>
+        </div>
+        <div class="articlecontent py-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-4 col-md-5 offset-lg-4 offset-md-2 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/MICROsoft.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="articleContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/web.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 offset-lg-4 offset-md-2 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/MICROsoft.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/web.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 offset-lg-4 offset-md-2 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/MICROsoft.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="articleContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/web.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 offset-lg-4 offset-md-2 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/MICROsoft.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/web.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 offset-lg-4 offset-md-2 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/MICROsoft.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="articleContainer">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/web.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 offset-lg-4 offset-md-2 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/MICROsoft.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 mb-5">
+                        <div class="articleContainer ">
+                            <div class="imageContainer">
+                                <img src="./assets/imgs/web.jpg" alt="articel image" class="img-fluid">
+                            </div>
+                            <div class="contentContainer p-3">
+                                <article>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et mollitia amet facere, dolorum non recusandae.
+                                </article>
+                                <div class="buttonContainer d-flex align-items-center mt-3">
+                                    <a href="articlePage.html" class="readNowButton me-2">
+                                        اقرا الان
+                                    </a>
+                                    <div class="viewContainer me-auto ms-2">
+                                        <i class="far fa-eye ms-1"></i>
+                                        200
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagintaionContainer d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <i class="fas fa-angle-double-left"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  
+    
+    <footer>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="d-flex align-items-center h-100 imageContainer">
+                        <img src="./assets/imgs/footer-vec.jpg" class="img-fluid" alt="footerImage1">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="footerleftDivContainer d-flex flex-column justify-content-center h-100">
+                        <div class="d-flex align-items-lg-center  imageContainer">
+                            <img src="./assets/imgs/footer-logo3.png" class="img-fluid" alt="logo">
+                        </div>
+                        <span class="footerSpan my-4">
+                            المنصورة- حى الجامعة- تقسيم الزعبلاوى
+                        </span>
+                        <ul class="d-flex mt-3">
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-whatsapp fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                </a>
+                            </li>
+                            <li class="ListLis ms-4">
+                                <a href="#" class="listAnchors">
+                                    <i class="fab fa-github fa-lg"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
